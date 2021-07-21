@@ -42,6 +42,7 @@ class App extends Component{
       <CardList users = {filteredUser}> </CardList>
   </div>);   
   }
+  
   componentDidMount(){
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => response.json())
